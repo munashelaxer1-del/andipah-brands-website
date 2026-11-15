@@ -1,69 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ANDIPAH BRANDS FURNITURE — custom furniture, kitchen cabinets and wardrobes in Bulawayo, Zimbabwe.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ANDIPAH BRANDS FURNITURE — custom furniture, fitted kitchens and bedroom storage in Zimbabwe.">
 <title>ANDIPAH BRANDS FURNITURE | Crafted for Your Lifestyle</title>
 <style>
-:root{--ink:#f7f3e9;--muted:#c9c2b4;--cream:#171512;--paper:#080808;--green:#bd8b22;--gold:#e3b84f;--line:#3c321e}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
-a{color:inherit;text-decoration:none}.wrap{width:min(1140px,92%);margin:auto}
-header{position:sticky;top:0;background:rgba(8,8,8,.97);backdrop-filter:blur(10px);z-index:5;border-bottom:1px solid var(--gold)}
-.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;letter-spacing:1.5px;font-size:18px}.brand span{display:block;font-size:10px;letter-spacing:3px;color:var(--gold);font-weight:700}
-nav{display:flex;gap:26px;font-size:13px;font-weight:700}nav a:hover{color:var(--gold)}.nav-cta,.btn{display:inline-block;background:linear-gradient(135deg,#f1d27a,#b78218);color:#100d06;padding:12px 20px;border-radius:3px;font-size:13px;font-weight:700;letter-spacing:.3px}.nav-cta:hover,.btn:hover{background:#223329}
-.hero{background:linear-gradient(90deg,rgba(28,32,36,.84),rgba(28,32,36,.28)),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1900&q=85') center/cover;min-height:610px;display:flex;align-items:center;color:white}
-.hero-copy{max-width:620px;padding:90px 0}.eyebrow{color:#e1e5e8;font-size:11px;font-weight:800;letter-spacing:3px;text-transform:uppercase}.hero h1{font-family:Georgia,serif;font-size:clamp(42px,6vw,70px);line-height:1.05;font-weight:500;margin:18px 0}.hero p{max-width:500px;color:#f1eee7;font-size:17px;margin-bottom:30px}.btn.light{background:#fff;color:var(--green);margin-left:10px}
-section{padding:86px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 42px}.section-head .eyebrow{color:var(--gold)}h2{font-family:Georgia,serif;font-size:clamp(32px,4vw,44px);font-weight:500;line-height:1.15;margin:10px 0 14px}.section-head p,.muted{color:var(--muted)}
-.products{background:var(--cream)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.product{background:#0d0c0a;border:1px solid #9f771e;box-shadow:0 8px 24px rgba(0,0,0,.28)}.product img{width:100%;height:235px;object-fit:cover;display:block}.product-body{padding:22px}.product h3{font-family:Georgia,serif;font-size:23px;font-weight:500;margin:0 0 7px}.product p{color:var(--muted);font-size:14px;margin:0}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-img{width:100%;height:440px;object-fit:cover}.checks{padding:0;list-style:none}.checks li{padding:10px 0;border-bottom:1px solid var(--line)}.checks li:before{content:"✓";color:var(--gold);font-weight:bold;margin-right:12px}
-.banner{background:var(--green);color:white;text-align:center;padding:68px 20px}.banner h2{max-width:720px;margin:10px auto 18px}.banner p{color:#e0e6df}.banner .btn{background:#fff;color:var(--green);margin-top:12px}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.step{border-top:2px solid var(--gold);padding-top:18px}.step b{font-family:Georgia,serif;font-size:25px;font-weight:500}
-.contact{background:var(--cream)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px}.contact-card{background:#0d0c0a;padding:30px;border:1px solid var(--gold)}.contact-card label{display:block;font-size:12px;font-weight:700;margin:14px 0 5px}.contact-card input,.contact-card textarea,.contact-card select{width:100%;padding:12px;border:1px solid var(--line);background:#171512;color:#fff;font:inherit}.contact-card textarea{min-height:100px}.contact-card button{border:0;cursor:pointer;margin-top:16px}.note{font-size:12px;color:var(--muted)}
-footer{background:#000;color:#e8e9e4;padding:35px 0;border-top:1px solid var(--gold)}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot small{color:#bfc5bd}
-@media(max-width:760px){nav{display:none}.hero{min-height:540px}.grid{grid-template-columns:1fr 1fr}.about-grid,.contact-grid{grid-template-columns:1fr}.about-img{height:300px}.steps{grid-template-columns:1fr}.foot{display:block}.nav-cta{padding:10px 13px}}
-@media(max-width:480px){.grid{grid-template-columns:1fr}.hero-copy{padding:70px 0}.btn.light{margin:12px 0 0}}
+:root{--bg:#090909;--panel:#15130f;--gold:#d8ad48;--cream:#f5f0e5;--muted:#c9c1b2;--line:#55421d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font:16px/1.65 Arial,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:5;background:#090909ed;border-bottom:1px solid var(--gold)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:900;letter-spacing:2px}.brand span{display:block;color:var(--gold);font-size:10px;letter-spacing:4px}
+nav{display:flex;gap:22px;font-size:12px;font-weight:bold}nav a:hover{color:var(--gold)}
+.btn{display:inline-block;background:linear-gradient(135deg,#f3d98e,#b9821d);color:#171106;padding:12px 19px;font-size:12px;font-weight:800;letter-spacing:.5px;border-radius:2px}
+.hero{min-height:590px;display:flex;align-items:center;background:linear-gradient(90deg,#080808e8,#08080866),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero-copy{max-width:650px;padding:85px 0}.eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:bold}
+h1,h2,h3{font-family:Georgia,serif;font-weight:500;line-height:1.15}h1{font-size:clamp(42px,7vw,72px);margin:18px 0}h2{font-size:clamp(32px,4vw,46px);margin:10px 0}h3{font-size:23px;margin:0 0 8px}
+.hero p{max-width:540px;color:#eee8dc;font-size:17px;margin-bottom:28px}
+section{padding:78px 0}.dark{background:#12100d}.head{text-align:center;max-width:690px;margin:0 auto 38px}.head p,.muted,.card p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:var(--panel);border:1px solid var(--line)}.card img{width:100%;height:225px;object-fit:cover;display:block}.card div{padding:20px}.card p{font-size:14px;margin:0}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.gallery .card img{height:300px}.note{font-size:12px;color:var(--muted);text-align:center;margin-top:18px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.about img{width:100%;height:420px;object-fit:cover}.checks{padding:0;list-style:none}.checks li{padding:9px 0;border-bottom:1px solid var(--line)}.checks li:before{content:"✓";color:var(--gold);margin-right:12px}
+.banner{text-align:center;background:linear-gradient(120deg,#30240f,#15120c);border-block:1px solid var(--gold)}.banner p{color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.step{border-top:2px solid var(--gold);padding-top:16px}.step b{font:24px Georgia,serif}
+.contact{background:#12100d}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px}.contact-card{padding:26px;background:#090909;border:1px solid var(--line)}label{display:block;font-size:12px;font-weight:bold;margin:12px 0 5px}input,select,textarea{width:100%;padding:12px;background:#171512;border:1px solid var(--line);color:white;font:inherit}textarea{min-height:100px}button{border:0;cursor:pointer;margin-top:15px}
+footer{padding:30px 0;border-top:1px solid var(--gold);background:#050505}.foot{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:760px){nav{display:none}.grid{grid-template-columns:1fr 1fr}.about,.contact-grid{grid-template-columns:1fr}.about img{height:290px}.steps{grid-template-columns:1fr}.gallery .card img{height:240px}}
+@media(max-width:480px){.grid,.gallery{grid-template-columns:1fr}.hero{min-height:530px}.foot{display:block}}
 </style>
 </head>
 <body>
 <header><div class="wrap nav">
-  <a class="brand" href="#home">ANDIPAH BRANDS<span>FURNITURE</span></a>
-  <nav><a href="#home">HOME</a><a href="#products">OUR PRODUCTS</a><a href="#about">ABOUT</a><a href="#process">HOW IT WORKS</a><a href="#contact">CONTACT</a></nav>
-  <a class="nav-cta" href="#contact">REQUEST A QUOTE</a>
+<a class="brand" href="#home">ANDIPAH BRANDS<span>FURNITURE</span></a>
+<nav><a href="#home">HOME</a><a href="#products">PRODUCTS</a><a href="#gallery">GALLERY</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></nav>
+<a class="btn" href="#contact">REQUEST A QUOTE</a>
 </div></header>
 <main>
 <section class="hero" id="home"><div class="wrap"><div class="hero-copy">
-  <div class="eyebrow">Furniture • Fitted Kitchens • Chest of Drawers</div>
-  <h1>Modern living.<br>Timeless style.</h1>
-  <p>Premium furniture, fitted kitchens and stylish storage, made to bring comfort, function and elegance into your home. Based in Bulawayo, Zimbabwe, we welcome enquiries from across Zimbabwe and around the world.</p>
-  <a class="btn" href="#products">EXPLORE OUR WORK</a><a class="btn light" href="#contact">GET A QUOTE</a><a class="btn" style="margin-left:10px;background:#687078" href="https://wa.me/263713956749" target="_blank" rel="noopener">WHATSAPP US</a>
+<div class="eyebrow">Furniture • Fitted Kitchens • Custom Storage</div>
+<h1>Modern living.<br>Timeless style.</h1>
+<p>Premium furniture, fitted kitchens and stylish storage designed around your home. Made in Zimbabwe, with enquiries welcome from across Zimbabwe and internationally.</p>
+<a class="btn" href="#products">EXPLORE OUR PRODUCTS</a>
 </div></div></section>
-<section id="products" class="products"><div class="wrap">
-  <div class="section-head"><div class="eyebrow">What we make</div><h2>Made for your space</h2><p>From everyday essentials to custom fitted interiors, tell us what you have in mind and we’ll help shape the design.</p></div>
-  <div class="grid">
-    <article class="product"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80" alt="Contemporary living room furniture"><div class="product-body"><h3>TV Stands & Living Room</h3><p>Practical storage and clean designs to complement your living space.</p></div></article>
-    <article class="product"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80" alt="Bedroom furniture"><div class="product-body"><h3>Bedroom Furniture</h3><p>Bedside drawers, chests of drawers and coordinated bedroom pieces.</p></div></article>
-    <article class="product"><img src="https://images.unsplash.com/photo-1600213689283-7c6a6c4b8d2f?auto=format&fit=crop&w=900&q=80" alt="Fitted wardrobe"><div class="product-body"><h3>Wardrobes</h3><p>Storage planned around your room, your belongings and your style.</p></div></article>
-    <article class="product"><img src="images/fitted-kitchen.png" alt="Luxury charcoal and cream fitted kitchen"><div class="product-body"><h3>Fitted Kitchens</h3><p>Beautiful made-to-measure kitchen layouts, cabinet finishes and clever storage.</p></div></article>
-    <article class="product"><img src="images/chest-of-drawers.png" alt="White and charcoal chest of drawers with gold handles"><div class="product-body"><h3>Chest of Drawers</h3><p>Useful, attractive storage made to suit your available space.</p></div></article>
-    <article class="product"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=80" alt="Custom interior furniture"><div class="product-body"><h3>Custom Furniture</h3><p>Have a design in mind? Share your idea and ask for a custom quotation.</p></div></article>
-  </div>
-</div></section>
-<section id="about"><div class="wrap about-grid">
-  <img class="about-img" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1100&q=85" alt="Elegant modern fitted interior">
-  <div><div class="eyebrow">About Andipah Brands</div><h2>Good design. Practical living.</h2><p class="muted">ANDIPAH BRANDS FURNITURE is a Bulawayo-based furniture brand focused on custom furniture, kitchen cabinets and fitted storage. We work with skilled carpenters to bring customer ideas to life. Customers across Zimbabwe and overseas can contact us to discuss custom projects, shipping possibilities and destination-specific arrangements.</p><ul class="checks"><li>Made to your measurements</li><li>Design options to suit your budget</li><li>Clear quotations before work begins</li><li>Personal service from enquiry to delivery</li></ul></div>
-</div></section>
-<section class="banner"><div class="eyebrow">Zimbabwe-based • Worldwide enquiries</div><h2>Let’s create something that feels like home.</h2><p>Tell us about your space, preferred style and budget.</p><a class="btn" href="#contact">START YOUR PROJECT</a></section>
-<section id="process"><div class="wrap"><div class="section-head"><div class="eyebrow">Simple process</div><h2>From idea to installation</h2><p>We keep the process straightforward and communicate with you at every stage.</p></div>
-<div class="steps"><div class="step"><b>01. Tell us</b><p class="muted">Send your idea, measurements, inspiration photos and budget.</p></div><div class="step"><b>02. Get a quote</b><p class="muted">We discuss the design, materials, price and expected timeline.</p></div><div class="step"><b>03. We make it</b><p class="muted">Once details and payment milestones are agreed, production begins.</p></div></div></div></section>
-<section class="contact" id="contact"><div class="wrap"><div class="section-head"><div class="eyebrow">Contact us</div><h2>Let’s talk about your project</h2><p>Based in Bulawayo, Zimbabwe. We welcome enquiries from across Zimbabwe and internationally. Delivery, shipping and installation options are confirmed for each destination.</p></div>
-<div class="contact-grid"><div><h3>ANDIPAH BRANDS FURNITURE</h3><p class="muted">Bulawayo, Zimbabwe</p><p class="muted">Enquiries welcome from all provinces and international customers. Shipping and installation availability depends on destination.</p><p><b>WhatsApp:</b> <a href="https://wa.me/263713956749" target="_blank" rel="noopener">+263 71 395 6749</a></p><p><b>Calls:</b> <a href="tel:+263777453474">+263 77 745 3474</a></p><p><b>Email:</b> <a href="mailto:munashelaxer1@gmail.com">munashelaxer1@gmail.com</a></p><p class="note">Based in Bulawayo • Enquiries welcome from across Zimbabwe and worldwide. Delivery and installation are subject to destination and project assessment.</p><p><a class="btn" href="https://wa.me/263713956749" target="_blank" rel="noopener">CHAT ON WHATSAPP</a></p></div>
-<form class="contact-card" onsubmit="sendEnquiry(event)"><h3>Request a quotation</h3><label for="name">Your name</label><input id="name" required placeholder="Name"><label for="phone">Phone / WhatsApp</label><input id="phone" required placeholder="Your number"><label for="type">What do you need?</label><select id="type"><option>Fitted kitchen</option><option>Wardrobe</option><option>Chest of drawers</option><option>TV stand</option><option>Other custom furniture</option></select><label for="details">Project details</label><textarea id="details" placeholder="Measurements, preferred colour, budget or other details"></textarea><button class="btn" type="submit">PREPARE ENQUIRY</button><p class="note">Submitting opens an email draft addressed to ANDIPAH BRANDS.</p></form>
+
+<section class="dark" id="products"><div class="wrap">
+<div class="head"><div class="eyebrow">What we make</div><h2>Made for your space</h2><p>Explore our furniture range and contact us to discuss sizes, finishes and a design that suits your home.</p></div>
+<div class="grid">
+<article class="card"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80" alt="Contemporary living room furniture"><div><h3>TV Stands & Living Room</h3><p>Practical storage and modern designs for your living space.</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80" alt="Bedroom furniture"><div><h3>Bedroom Furniture</h3><p>Coordinated bedroom pieces made to complement your room.</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1600213689283-7c6a6c4b8d2f?auto=format&fit=crop&w=900&q=80" alt="Fitted wardrobe"><div><h3>Wardrobes</h3><p>Storage planned around your measurements and style.</p></div></article>
+<article class="card"><img src="https://www.hopkinshomes.co.uk/media/ztrpflnp/hh-website-property-dcp_3206.jpg?width=2000" alt="Modern light fitted kitchen"><div><h3>Fitted Kitchens</h3><p>Made-to-measure kitchen cabinets, layouts and clever storage.</p></div></article>
+<article class="card"><img src="https://www.hanseninteriors.com/cdn/shop/files/bdi-linq-9185-modern-wood-bedroom-5-drawer-chest-furniture-walnut-isolated-1-hansen-interiors.jpg?v=1741370837" alt="Modern chest of drawers"><div><h3>Chest of Drawers</h3><p>Attractive and useful storage made to suit your available space.</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Bedroom interior"><div><h3>Bedside Drawers</h3><p>Compact bedside storage to complete your bedroom.</p></div></article>
 </div></div></section>
+
+<section id="gallery"><div class="wrap">
+<div class="head"><div class="eyebrow">Design inspiration</div><h2>Kitchen & bedroom storage gallery</h2><p>Explore a few style ideas for your next fitted kitchen or drawer project. Ask us about custom colours, finishes and dimensions.</p></div>
+<div class="gallery">
+<article class="card"><img src="https://www.hopkinshomes.co.uk/media/ztrpflnp/hh-website-property-dcp_3206.jpg?width=2000" alt="Light beige fitted kitchen"><div><h3>Light modern fitted kitchen</h3><p>Bright cabinetry, clean worktops and practical storage.</p></div></article>
+<article class="card"><img src="https://sigmahomesgroup.co.uk/media/images/merrywood-apartment-25-11-774-1200-764.jpg" alt="Wood finish fitted kitchen"><div><h3>Warm wood-finish kitchen</h3><p>Natural tones with a contemporary fitted layout.</p></div></article>
+<article class="card"><img src="https://www.hanseninteriors.com/cdn/shop/files/bdi-linq-9185-modern-wood-bedroom-5-drawer-chest-furniture-walnut-isolated-1-hansen-interiors.jpg?v=1741370837" alt="Walnut chest of drawers"><div><h3>Modern chest of drawers</h3><p>Generous drawer storage with a warm wood finish.</p></div></article>
+<article class="card"><img src="https://assets.wfcdn.com/im/55283334/compr-r85/2599/259940438/Series%2B11%2B38%27%27%2BW%2B5%2B-%2BDrawer%2BDresser.jpg" alt="Minimal oak drawer unit"><div><h3>Minimal oak drawer unit</h3><p>A clean modern look for bedrooms and dressing areas.</p></div></article>
+</div>
+<p class="note">Gallery photographs are design inspiration only and are not represented as completed ANDIPAH BRANDS customer projects. Your furniture design can be customised.</p>
+</div></section>
+
+<section id="about"><div class="wrap about">
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1100&q=85" alt="Elegant modern interior">
+<div><div class="eyebrow">About Andipah Brands</div><h2>Good design. Practical living.</h2>
+<p class="muted">ANDIPAH BRANDS FURNITURE is a Zimbabwe-based furniture brand focused on custom furniture, kitchen cabinets and fitted storage. We work with customers to shape practical designs for their homes and spaces.</p>
+<ul class="checks"><li>Made to your measurements</li><li>Design options to suit your budget</li><li>Clear quotations before work begins</li><li>Enquiries from Zimbabwe and overseas</li></ul>
+</div></div></section>
+
+<section class="banner"><div class="wrap"><div class="eyebrow">Made in Zimbabwe • Worldwide enquiries</div><h2>Let's create something that feels like home.</h2><p>Tell us about your space, preferred style and budget.</p><a class="btn" href="#contact">START YOUR PROJECT</a></div></section>
+
+<section id="process"><div class="wrap"><div class="head"><div class="eyebrow">Simple process</div><h2>From idea to installation</h2><p>We keep the process straightforward and communicate with you at every stage.</p></div>
+<div class="steps"><div class="step"><b>01. Tell us</b><p class="muted">Send your idea, measurements and inspiration photos.</p></div><div class="step"><b>02. Get a quote</b><p class="muted">Discuss design, materials, price and expected timeline.</p></div><div class="step"><b>03. We make it</b><p class="muted">Production begins once the details and payment milestones are agreed.</p></div></div></div></section>
+
+<section class="contact" id="contact"><div class="wrap"><div class="head"><div class="eyebrow">Contact us</div><h2>Let's talk about your project</h2><p>Based in Zimbabwe. Enquiries welcome from across the country and internationally. Delivery and installation options are confirmed for each destination.</p></div>
+<div class="contact-grid"><div><h3>ANDIPAH BRANDS FURNITURE</h3><p class="muted">Zimbabwe</p>
+<p><b>WhatsApp:</b> <a href="https://wa.me/263713956749" target="_blank" rel="noopener">+263 71 395 6749</a></p>
+<p><b>Calls:</b> <a href="tel:+263777453474">+263 77 745 3474</a></p>
+<p><b>Email:</b> <a href="mailto:munashelaxer1@gmail.com">munashelaxer1@gmail.com</a></p>
+<a class="btn" href="https://wa.me/263713956749" target="_blank" rel="noopener">CHAT ON WHATSAPP</a>
+</div>
+<form class="contact-card" onsubmit="sendEnquiry(event)"><h3>Request a quotation</h3>
+<label for="name">Your name</label><input id="name" required placeholder="Name">
+<label for="phone">Phone / WhatsApp</label><input id="phone" required placeholder="Your number">
+<label for="type">What do you need?</label><select id="type"><option>Fitted kitchen</option><option>Wardrobe</option><option>Chest of drawers</option><option>Bedside drawers</option><option>TV stand</option><option>Other custom furniture</option></select>
+<label for="details">Project details</label><textarea id="details" placeholder="Measurements, preferred colour, budget or other details"></textarea>
+<button class="btn" type="submit">PREPARE ENQUIRY</button><p class="note">This opens an email draft addressed to ANDIPAH BRANDS.</p>
+</form></div></div></section>
 </main>
-<footer><div class="wrap foot"><div><b>ANDIPAH BRANDS FURNITURE</b><br><small>Crafted for your lifestyle.</small></div><small>© <span id="year"></span> ANDIPAH BRANDS. All rights reserved.</small></div></footer>
+<footer><div class="wrap foot"><div><b>ANDIPAH BRANDS FURNITURE</b><br><span class="muted">Crafted for your lifestyle.</span></div><small class="muted">© <span id="year"></span> ANDIPAH BRANDS. All rights reserved.</small></div></footer>
 <script>
 document.getElementById('year').textContent=new Date().getFullYear();
-function sendEnquiry(e){e.preventDefault();const email='munashelaxer1@gmail.com';const name=document.getElementById('name').value;const phone=document.getElementById('phone').value;const type=document.getElementById('type').value;const details=document.getElementById('details').value;const subject=encodeURIComponent('Furniture quotation request - '+type);const body=encodeURIComponent('Name: '+name+'\nPhone: '+phone+'\nProject: '+type+'\nDetails: '+details);window.location.href='mailto:'+email+'?subject='+subject+'&body='+body;}
+function sendEnquiry(e){e.preventDefault();const email='munashelaxer1@gmail.com';const name=document.getElementById('name').value;const phone=document.getElementById('phone').value;const type=document.getElementById('type').value;const details=document.getElementById('details').value;const subject=encodeURIComponent('Furniture quotation request - '+type);const body=encodeURIComponent('Name: '+name+'\\nPhone: '+phone+'\\nProject: '+type+'\\nDetails: '+details);window.location.href='mailto:'+email+'?subject='+subject+'&body='+body;}
 </script>
 </body></html>
